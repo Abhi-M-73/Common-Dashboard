@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@media (max-width: 768px) {
+    .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+    background-color: #4a90e2; 
+    border-radius: 4px;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.scrollable-content {
+    overflow-y :auto;
+    scrollbar-width: thin; 
+    scrollbar-color: #909499 rgba(0, 0, 0, 0.1); 
+}
